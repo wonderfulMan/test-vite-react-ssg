@@ -6,6 +6,9 @@ import { } from 'vite-react-ssg'
 export default defineConfig({
   plugins: [react()],
   base: '/test-vite-react-ssg',
+  build: {
+    outDir: 'docs',
+  },
   server: {
     headers: {
       'Cross-Origin-Opener-Policy': 'same-origin',
